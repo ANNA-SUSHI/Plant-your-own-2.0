@@ -24,6 +24,7 @@
 		A4A52E6A26BEA9D600C57527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4A52E6D26BEA9D600C57527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4A52E6F26BEA9D600C57527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4A52E7726BEAA7F00C57527 /* Planning for the app.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Planning for the app.pptx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		A4A52E5526BEA9D400C57527 = {
 			isa = PBXGroup;
 			children = (
+				A4A52E7626BEAA5000C57527 /* Document */,
 				A4A52E6026BEA9D400C57527 /* Plant Your Own! */,
 				A4A52E5F26BEA9D400C57527 /* Products */,
 			);
@@ -65,6 +67,14 @@
 				A4A52E6F26BEA9D600C57527 /* Info.plist */,
 			);
 			path = "Plant Your Own!";
+			sourceTree = "<group>";
+		};
+		A4A52E7626BEAA5000C57527 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				A4A52E7726BEAA7F00C57527 /* Planning for the app.pptx */,
+			);
+			path = Document;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
