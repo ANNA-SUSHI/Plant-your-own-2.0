@@ -1,0 +1,39 @@
+
+/* Class = "UIButton"; normalTitle = "次"; ObjectID = "4Sf-lh-KOO"; */
+"4Sf-lh-KOO.normalTitle" = "次";
+
+/* Class = "UIButton"; normalTitle = "次"; ObjectID = "4wZ-F7-tsE"; */
+"4wZ-F7-tsE.normalTitle" = "次";
+
+/* Class = "UILabel"; text = "あなたの名前は？"; ObjectID = "Efw-mV-FVK"; */
+"Efw-mV-FVK.text" = "あなたの名前は？";
+
+/* Class = "UIButton"; normalTitle = "英語"; ObjectID = "Gai-rQ-Y1e"; */
+"Gai-rQ-Y1e.normalTitle" = "英語";
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "MHm-Tf-heh"; */
+"MHm-Tf-heh.normalTitle" = "English";
+
+/* Class = "UIButton"; normalTitle = "決定"; ObjectID = "S6f-wH-NS9"; */
+"S6f-wH-NS9.normalTitle" = "決定";
+
+/* Class = "UIButton"; normalTitle = "日本語"; ObjectID = "TtW-Cn-RsI"; */
+"TtW-Cn-RsI.normalTitle" = "日本語";
+
+/* Class = "UILabel"; text = "か"; ObjectID = "lZa-uH-jYk"; */
+"lZa-uH-jYk.text" = "か";
+
+/* Class = "UILabel"; text = "よろしくね,００さん！"; ObjectID = "nYa-9c-ZA7"; */
+"nYa-9c-ZA7.text" = "よろしくね,００さん！";
+
+/* Class = "UILabel"; text = "or"; ObjectID = "ovc-lP-MlS"; */
+"ovc-lP-MlS.text" = "or";
+
+/* Class = "UIButton"; normalTitle = "Japanese"; ObjectID = "pnL-1b-paW"; */
+"pnL-1b-paW.normalTitle" = "Japanese";
+
+/* Class = "UIButton"; normalTitle = "決定"; ObjectID = "vbD-Od-UpS"; */
+"vbD-Od-UpS.normalTitle" = "決定";
+
+/* Class = "UILabel"; text = "初めまして, 私の名前はみどりちゃんです！"; ObjectID = "ysK-0H-M88"; */
+"ysK-0H-M88.text" = "初めまして, 私の名前はみどりちゃんです！";
