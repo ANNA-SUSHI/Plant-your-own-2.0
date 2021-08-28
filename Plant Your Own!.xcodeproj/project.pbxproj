@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A44B87D126DA5B9C000B5064 /* Drytree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44B87D026DA5B9C000B5064 /* Drytree.swift */; };
+		A44B87D326DA5C29000B5064 /* Knowtree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44B87D226DA5C29000B5064 /* Knowtree.swift */; };
 		A4A52E6226BEA9D400C57527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A52E6126BEA9D400C57527 /* AppDelegate.swift */; };
 		A4A52E6426BEA9D400C57527 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A52E6326BEA9D400C57527 /* SceneDelegate.swift */; };
 		A4A52E6626BEA9D400C57527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A52E6526BEA9D400C57527 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A44B87D026DA5B9C000B5064 /* Drytree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drytree.swift; sourceTree = "<group>"; };
+		A44B87D226DA5C29000B5064 /* Knowtree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knowtree.swift; sourceTree = "<group>"; };
 		A4A52E5E26BEA9D400C57527 /* Plant Your Own!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plant Your Own!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A52E6126BEA9D400C57527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4A52E6326BEA9D400C57527 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				A4A52E8426C7E1BB00C57527 /* ResultViewController.swift */,
 				A4A52E7E26C7DFB200C57527 /* Localizable.strings */,
 				A4A52E6726BEA9D400C57527 /* Main.storyboard */,
+				A44B87D226DA5C29000B5064 /* Knowtree.swift */,
+				A44B87D026DA5B9C000B5064 /* Drytree.swift */,
 				A4A52E6A26BEA9D600C57527 /* Assets.xcassets */,
 				A4A52E6C26BEA9D600C57527 /* LaunchScreen.storyboard */,
 				A4A52E6F26BEA9D600C57527 /* Info.plist */,
@@ -160,8 +166,10 @@
 			files = (
 				A4A52E6626BEA9D400C57527 /* ViewController.swift in Sources */,
 				A4A52E6226BEA9D400C57527 /* AppDelegate.swift in Sources */,
+				A44B87D326DA5C29000B5064 /* Knowtree.swift in Sources */,
 				A4A52E6426BEA9D400C57527 /* SceneDelegate.swift in Sources */,
 				A4A52E8526C7E1BB00C57527 /* ResultViewController.swift in Sources */,
+				A44B87D126DA5B9C000B5064 /* Drytree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
