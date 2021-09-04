@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         if segue.identifier == "next" {
             let next = segue.destination as? ResultViewController
             next!.name = textField.text!
+            UserInformation.shared.name = textField.text!
         }
     }
     
