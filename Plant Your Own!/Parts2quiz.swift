@@ -1,19 +1,19 @@
 //
-//  PartsQuiz.swift
+//  Parts2quiz.swift
 //  Plant Your Own!
 //
-//  Created by Anna T on 2021/09/04.
+//  Created by Anna T on 2021/09/11.
 //
 
 import UIKit
-
-class PartsQuiz: UIViewController {
+class Parts2Quiz: UIViewController {
     @IBOutlet weak var A: UIButton!
     @IBOutlet weak var B: UIButton!
     @IBOutlet weak var C: UIButton!
     @IBOutlet weak var result: UILabel!
-    
     private var answer = ""
+    
+    
     override func viewDidLoad() {
         
     
@@ -34,7 +34,7 @@ class PartsQuiz: UIViewController {
         answer = "C"
     }
     @IBAction func check(_ sender: Any) {
-        if answer == "A" {
+        if answer == "C" {
             result.text = "正解"
         } else {
             result.text = "不正解"
