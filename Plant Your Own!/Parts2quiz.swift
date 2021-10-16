@@ -40,5 +40,10 @@ class Parts2Quiz: UIViewController {
             result.text = "不正解"
         }
     }
+    @IBAction func next(_ sender: Any) {
+        if result.text == "正解" {
+            UserInformation.shared.correctnumber += 1
+        }
+    }
     
 }

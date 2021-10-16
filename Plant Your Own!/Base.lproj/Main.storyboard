@@ -587,7 +587,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGP-yj-m4Q">
-                                <rect key="frame" x="159" y="760" width="90" height="66"/>
+                                <rect key="frame" x="153" y="780" width="90" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.046071960760000003" green="0.084077911219999996" blue="0.85226723579999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -650,7 +650,7 @@
         <!--Parts Quiz-->
         <scene sceneID="ww1-Wl-s9V">
             <objects>
-                <viewController id="f3d-kc-XQl" customClass="PartsQuiz" customModule="Plant_Your_Own_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="quiz1" id="f3d-kc-XQl" customClass="PartsQuiz" customModule="Plant_Your_Own_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q9I-f1-t77">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -713,6 +713,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="next:" destination="f3d-kc-XQl" eventType="touchUpInside" id="dzz-xe-zBE"/>
                                     <segue destination="FBn-40-fHI" kind="presentation" modalPresentationStyle="fullScreen" id="ayw-RO-6wm"/>
                                 </connections>
                             </button>
@@ -837,6 +838,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="next:" destination="FBn-40-fHI" eventType="touchUpInside" id="wcH-sj-XoV"/>
                                     <segue destination="8SC-zR-GhK" kind="presentation" modalPresentationStyle="fullScreen" id="qpw-IP-1r7"/>
                                 </connections>
                             </button>
@@ -950,6 +952,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="next:" destination="8SC-zR-GhK" eventType="touchUpInside" id="Vao-LN-bRU"/>
                                     <segue destination="9Gr-OL-46H" kind="presentation" modalPresentationStyle="fullScreen" id="a0c-gb-xKX"/>
                                 </connections>
                             </button>
@@ -975,10 +978,10 @@
             </objects>
             <point key="canvasLocation" x="11925" y="84"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz Ending1-->
         <scene sceneID="bi3-Ug-JXM">
             <objects>
-                <viewController id="9Gr-OL-46H" sceneMemberID="viewController">
+                <viewController id="9Gr-OL-46H" customClass="QuizEnding1" customModule="Plant_Your_Own_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RCz-rs-Nf7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1008,6 +1011,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="next:" destination="9Gr-OL-46H" eventType="touchUpInside" id="vh5-0P-MJM"/>
                                     <segue destination="wR6-gE-ncU" kind="presentation" modalPresentationStyle="fullScreen" id="lWH-6k-56M"/>
                                 </connections>
                             </button>
@@ -1019,6 +1023,10 @@
                         <viewLayoutGuide key="safeArea" id="Vcc-s0-jGQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="praise" destination="2Zk-I1-F1c" id="aKF-20-azM"/>
+                        <outlet property="star" destination="8Dv-Mg-4Wa" id="mow-hB-zsb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJX-xl-ZLX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1088,18 +1096,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpW-B7-gxP">
-                                <rect key="frame" x="157" y="647" width="107" height="30"/>
+                                <rect key="frame" x="157" y="647" width="108" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                                <state key="normal" title="店ボタン">
+                                <state key="normal" title="バッチコレクト">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Tgx-kE-ylv" kind="presentation" modalPresentationStyle="fullScreen" id="koA-uX-Nu2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="店ボタンを押しましょう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JU8-bl-Glo">
-                                <rect key="frame" x="93" y="459" width="191" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="バッチコレクトを押しましょう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JU8-bl-Glo">
+                                <rect key="frame" x="63" y="459" width="243" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1130,9 +1138,9 @@
                                 <rect key="frame" x="20" y="547" width="374" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">ここでいったん買って見ましょう！
-最初はこの雪の結晶を買いましょう!
-雪の結晶を集めると、みどりちゃんをデザインをすることができます。</string>
+                                <string key="text">森のバッチをゲットしましょう！
+ゲットボタンを押しましょう！
+次のことを学ぶためには、バッチを集めないといけません。</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1144,18 +1152,28 @@
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" red="0.046071960760000003" green="0.084077911219999996" blue="0.85226723579999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snowflake" translatesAutoresizingMaskIntoConstraints="NO" id="RI5-mX-pDX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="memorytree" translatesAutoresizingMaskIntoConstraints="NO" id="RI5-mX-pDX">
                                 <rect key="frame" x="59" y="244" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWJ-1g-GI5">
-                                <rect key="frame" x="164" y="433" width="41" height="36"/>
+                                <rect key="frame" x="140" y="430" width="79" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="買う"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="ゲット">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="Vtv-3S-WW3" kind="presentation" modalPresentationStyle="fullScreen" id="2Qu-pb-w8p"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMw-58-Ucw">
+                                <rect key="frame" x="158" y="175" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="A61-gT-9Rn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1165,10 +1183,10 @@
             </objects>
             <point key="canvasLocation" x="15453.623188405798" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Finalplant1-->
         <scene sceneID="GkX-lS-CWy">
             <objects>
-                <viewController id="Vtv-3S-WW3" sceneMemberID="viewController">
+                <viewController id="Vtv-3S-WW3" customClass="Finalplant1" customModule="Plant_Your_Own_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GVD-XX-3TA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1177,8 +1195,8 @@
                                 <rect key="frame" x="54" y="116" width="307" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="買ってありがとう！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l09-li-hpX">
-                                <rect key="frame" x="96" y="485" width="200" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="おめでとうございます ^^" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l09-li-hpX">
+                                <rect key="frame" x="39" y="485" width="314" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
@@ -1192,6 +1210,9 @@
                                 <state key="normal" title="次">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="next:" destination="Vtv-3S-WW3" eventType="touchUpInside" id="FPD-xn-7tX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7ab-1L-3Bl"/>
@@ -1212,7 +1233,7 @@
         <image name="Speakgreen.jpg" width="624" height="650"/>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="leavetree" width="3024" height="4032"/>
-        <image name="snowflake" width="2520" height="2448"/>
+        <image name="memorytree" width="4288" height="2848"/>
         <image name="strugglingtree" width="4896" height="3672"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1225,6 +1246,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -9,6 +9,7 @@ import Foundation
 
 class UserInformation {
     var name = ""
+    var correctnumber = 0
     
     static let shared = UserInformation()
     private init() {}

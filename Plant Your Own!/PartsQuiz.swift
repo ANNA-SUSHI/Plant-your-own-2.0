@@ -15,7 +15,7 @@ class PartsQuiz: UIViewController {
     
     private var answer = ""
     override func viewDidLoad() {
-        
+        UserInformation.shared.correctnumber = 0
     
     }
     @IBAction func A(_ sender: Any) {
@@ -38,6 +38,11 @@ class PartsQuiz: UIViewController {
             result.text = "正解"
         } else {
             result.text = "不正解"
+        }
+    }
+    @IBAction func next(_ sender: Any) {
+        if result.text == "正解" {
+            UserInformation.shared.correctnumber += 1
         }
     }
     
