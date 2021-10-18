@@ -9,8 +9,9 @@ import Foundation
 
 class UserInformation {
     var name = ""
-    var correctnumber = 0
-    
+    var firstcorrectnumber = 0
+    var secondcorrectnumber = 0
+    var thirdcorrectnumber = 0
     static let shared = UserInformation()
     private init() {}
 }

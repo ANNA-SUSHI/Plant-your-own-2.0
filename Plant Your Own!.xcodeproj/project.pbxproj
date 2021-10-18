@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40D9386271AEAF6007D20E5 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D9385271AEAF6007D20E5 /* QuizViewController.swift */; };
+		A40D9388271AEE74007D20E5 /* Quiz2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D9387271AEE74007D20E5 /* Quiz2ViewController.swift */; };
+		A40D938A271AF00A007D20E5 /* Quiz3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D9389271AF00A007D20E5 /* Quiz3ViewController.swift */; };
+		A40D938C271AF1D9007D20E5 /* QuizEnding2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D938B271AF1D9007D20E5 /* QuizEnding2ViewController.swift */; };
+		A40D938E271AF407007D20E5 /* Temporary1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D938D271AF407007D20E5 /* Temporary1ViewController.swift */; };
+		A40D9390271AF586007D20E5 /* Temporary2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D938F271AF586007D20E5 /* Temporary2ViewController.swift */; };
+		A40D9392271C67DF007D20E5 /* Temporary3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D9391271C67DF007D20E5 /* Temporary3ViewController.swift */; };
+		A40D9394271C6A58007D20E5 /* QuizEnding3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D9393271C6A58007D20E5 /* QuizEnding3ViewController.swift */; };
 		A44B87D126DA5B9C000B5064 /* Drytree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44B87D026DA5B9C000B5064 /* Drytree.swift */; };
 		A44B87D326DA5C29000B5064 /* Knowtree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44B87D226DA5C29000B5064 /* Knowtree.swift */; };
 		A44B87D526E38CD9000B5064 /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44B87D426E38CD9000B5064 /* UserInformation.swift */; };
@@ -29,6 +37,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A40D9385271AEAF6007D20E5 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		A40D9387271AEE74007D20E5 /* Quiz2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz2ViewController.swift; sourceTree = "<group>"; };
+		A40D9389271AF00A007D20E5 /* Quiz3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz3ViewController.swift; sourceTree = "<group>"; };
+		A40D938B271AF1D9007D20E5 /* QuizEnding2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizEnding2ViewController.swift; sourceTree = "<group>"; };
+		A40D938D271AF407007D20E5 /* Temporary1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temporary1ViewController.swift; sourceTree = "<group>"; };
+		A40D938F271AF586007D20E5 /* Temporary2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temporary2ViewController.swift; sourceTree = "<group>"; };
+		A40D9391271C67DF007D20E5 /* Temporary3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temporary3ViewController.swift; sourceTree = "<group>"; };
+		A40D9393271C6A58007D20E5 /* QuizEnding3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizEnding3ViewController.swift; sourceTree = "<group>"; };
 		A44B87D026DA5B9C000B5064 /* Drytree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drytree.swift; sourceTree = "<group>"; };
 		A44B87D226DA5C29000B5064 /* Knowtree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knowtree.swift; sourceTree = "<group>"; };
 		A44B87D426E38CD9000B5064 /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
@@ -67,6 +83,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A40D9382271AE9CC007D20E5 /* Quizflower */ = {
+			isa = PBXGroup;
+			children = (
+				A4BA30E726F60A4A00D0CD9B /* Drytree2.swift */,
+				A4BA30DF26ECCCEA00D0CD9B /* Flower.storyboard */,
+				A40D938B271AF1D9007D20E5 /* QuizEnding2ViewController.swift */,
+				A40D9389271AF00A007D20E5 /* Quiz3ViewController.swift */,
+				A40D9387271AEE74007D20E5 /* Quiz2ViewController.swift */,
+				A40D9385271AEAF6007D20E5 /* QuizViewController.swift */,
+			);
+			path = Quizflower;
+			sourceTree = "<group>";
+		};
+		A40D9383271AEA14007D20E5 /* quizfirst */ = {
+			isa = PBXGroup;
+			children = (
+				A4A52E8426C7E1BB00C57527 /* ResultViewController.swift */,
+				A4BA30E326F6000900D0CD9B /* Finalplant1.swift */,
+				A44B87D226DA5C29000B5064 /* Knowtree.swift */,
+				A4A52E6726BEA9D400C57527 /* Main.storyboard */,
+				A4BA30E526F6054800D0CD9B /* QuizEnding1.swift */,
+				A44B87D026DA5B9C000B5064 /* Drytree.swift */,
+				A44B87D626E3958E000B5064 /* PartsQuiz.swift */,
+				A4BA30DD26ECCAB800D0CD9B /* Parts2quiz.swift */,
+				A4BA30E126ECCF5400D0CD9B /* Parts3quiz.swift */,
+			);
+			path = quizfirst;
+			sourceTree = "<group>";
+		};
+		A40D9384271AEA5B007D20E5 /* worldquiz */ = {
+			isa = PBXGroup;
+			children = (
+				A4646A6B27087C6C00264A7A /* Worldplants.storyboard */,
+				A40D9393271C6A58007D20E5 /* QuizEnding3ViewController.swift */,
+				A40D9391271C67DF007D20E5 /* Temporary3ViewController.swift */,
+				A40D938F271AF586007D20E5 /* Temporary2ViewController.swift */,
+				A40D938D271AF407007D20E5 /* Temporary1ViewController.swift */,
+			);
+			path = worldquiz;
+			sourceTree = "<group>";
+		};
 		A4A52E5526BEA9D400C57527 = {
 			isa = PBXGroup;
 			children = (
@@ -87,23 +144,14 @@
 		A4A52E6026BEA9D400C57527 /* Plant Your Own! */ = {
 			isa = PBXGroup;
 			children = (
+				A40D9384271AEA5B007D20E5 /* worldquiz */,
+				A40D9383271AEA14007D20E5 /* quizfirst */,
+				A40D9382271AE9CC007D20E5 /* Quizflower */,
 				A4A52E6126BEA9D400C57527 /* AppDelegate.swift */,
 				A4A52E6326BEA9D400C57527 /* SceneDelegate.swift */,
 				A4A52E6526BEA9D400C57527 /* ViewController.swift */,
-				A4A52E8426C7E1BB00C57527 /* ResultViewController.swift */,
 				A4A52E7E26C7DFB200C57527 /* Localizable.strings */,
-				A4A52E6726BEA9D400C57527 /* Main.storyboard */,
-				A4BA30E326F6000900D0CD9B /* Finalplant1.swift */,
-				A44B87D626E3958E000B5064 /* PartsQuiz.swift */,
-				A4BA30DD26ECCAB800D0CD9B /* Parts2quiz.swift */,
-				A4BA30E126ECCF5400D0CD9B /* Parts3quiz.swift */,
-				A44B87D226DA5C29000B5064 /* Knowtree.swift */,
-				A4BA30E526F6054800D0CD9B /* QuizEnding1.swift */,
 				A44B87D426E38CD9000B5064 /* UserInformation.swift */,
-				A44B87D026DA5B9C000B5064 /* Drytree.swift */,
-				A4BA30DF26ECCCEA00D0CD9B /* Flower.storyboard */,
-				A4646A6B27087C6C00264A7A /* Worldplants.storyboard */,
-				A4BA30E726F60A4A00D0CD9B /* Drytree2.swift */,
 				A4A52E6A26BEA9D600C57527 /* Assets.xcassets */,
 				A4A52E6C26BEA9D600C57527 /* LaunchScreen.storyboard */,
 				A4A52E6F26BEA9D600C57527 /* Info.plist */,
@@ -194,18 +242,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4A52E6626BEA9D400C57527 /* ViewController.swift in Sources */,
+				A40D9386271AEAF6007D20E5 /* QuizViewController.swift in Sources */,
+				A40D9392271C67DF007D20E5 /* Temporary3ViewController.swift in Sources */,
+				A40D9388271AEE74007D20E5 /* Quiz2ViewController.swift in Sources */,
 				A4BA30E226ECCF5400D0CD9B /* Parts3quiz.swift in Sources */,
 				A44B87D526E38CD9000B5064 /* UserInformation.swift in Sources */,
 				A4BA30E626F6054800D0CD9B /* QuizEnding1.swift in Sources */,
+				A40D938E271AF407007D20E5 /* Temporary1ViewController.swift in Sources */,
 				A4A52E6226BEA9D400C57527 /* AppDelegate.swift in Sources */,
 				A44B87D326DA5C29000B5064 /* Knowtree.swift in Sources */,
+				A40D9390271AF586007D20E5 /* Temporary2ViewController.swift in Sources */,
 				A4A52E6426BEA9D400C57527 /* SceneDelegate.swift in Sources */,
 				A4BA30E426F6000900D0CD9B /* Finalplant1.swift in Sources */,
 				A4BA30E826F60A4A00D0CD9B /* Drytree2.swift in Sources */,
+				A40D9394271C6A58007D20E5 /* QuizEnding3ViewController.swift in Sources */,
 				A4BA30DE26ECCAB800D0CD9B /* Parts2quiz.swift in Sources */,
 				A44B87D726E3958E000B5064 /* PartsQuiz.swift in Sources */,
 				A4A52E8526C7E1BB00C57527 /* ResultViewController.swift in Sources */,
+				A40D938C271AF1D9007D20E5 /* QuizEnding2ViewController.swift in Sources */,
 				A44B87D126DA5B9C000B5064 /* Drytree.swift in Sources */,
+				A40D938A271AF00A007D20E5 /* Quiz3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

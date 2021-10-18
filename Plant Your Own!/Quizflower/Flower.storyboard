@@ -328,10 +328,10 @@
             </objects>
             <point key="canvasLocation" x="4151" y="56"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="a6o-RZ-bu0">
             <objects>
-                <viewController id="TP8-Pm-ApO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondQuiz1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TP8-Pm-ApO" customClass="QuizViewController" customModule="Plant_Your_Own_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AFC-38-p03">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -365,6 +365,9 @@
                                 <state key="normal" title="たしかめる">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="Check:" destination="TP8-Pm-ApO" eventType="touchUpInside" id="sdL-pi-tFN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhV-pb-h5N">
                                 <rect key="frame" x="13" y="342" width="381" height="40"/>
@@ -373,6 +376,9 @@
                                 <state key="normal" title="B:日本の春や秋の気候(にほんのはるやあきのきこう)">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapb:" destination="TP8-Pm-ApO" eventType="touchUpInside" id="EIw-8U-ovz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeZ-F2-sDz">
                                 <rect key="frame" x="13" y="413" width="381" height="40"/>
@@ -381,6 +387,9 @@
                                 <state key="normal" title="C:砂漠(さばく)">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapc:" destination="TP8-Pm-ApO" eventType="touchUpInside" id="9qJ-Ze-Rxq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnJ-K2-g8I">
                                 <rect key="frame" x="268" y="715" width="90" height="66"/>
@@ -391,6 +400,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="next:" destination="TP8-Pm-ApO" eventType="touchUpInside" id="F7d-kG-66y"/>
                                     <segue destination="TaI-BQ-wot" kind="presentation" modalPresentationStyle="fullScreen" id="Q9q-UX-rbr"/>
                                 </connections>
                             </button>
@@ -401,20 +411,29 @@
                                 <state key="normal" title="A:熱帯雨林(ねったいうりん)">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapa:" destination="TP8-Pm-ApO" eventType="touchUpInside" id="caS-4P-7B2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NMq-WY-Api"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="A" destination="lFm-la-6Pc" id="RHE-PH-mSM"/>
+                        <outlet property="B" destination="HhV-pb-h5N" id="jhg-O9-tcu"/>
+                        <outlet property="C" destination="oeZ-F2-sDz" id="sQe-u9-hgc"/>
+                        <outlet property="Result" destination="dos-s8-pYm" id="3Sl-ai-BV2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gds-qd-5fF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5024.6376811594209" y="55.580357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz2 View Controller-->
         <scene sceneID="Mql-NU-ZxM">
             <objects>
-                <viewController id="TaI-BQ-wot" sceneMemberID="viewController">
+                <viewController id="TaI-BQ-wot" customClass="Quiz2ViewController" customModule="Plant_Your_Own_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sHs-Eg-I31">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -449,6 +468,9 @@
                                 <state key="normal" title="A:太陽の光">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapa:" destination="TaI-BQ-wot" eventType="touchUpInside" id="eVx-hP-DSR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYh-jn-Phj">
                                 <rect key="frame" x="20" y="338" width="381" height="40"/>
@@ -457,6 +479,9 @@
                                 <state key="normal" title="B:プラスチック">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapb:" destination="TaI-BQ-wot" eventType="touchUpInside" id="zM2-zU-K4j"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYZ-NE-KY1">
                                 <rect key="frame" x="20" y="409" width="381" height="40"/>
@@ -465,6 +490,9 @@
                                 <state key="normal" title="C:他の葉っぱ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapc:" destination="TaI-BQ-wot" eventType="touchUpInside" id="cLc-1H-kK0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="けっか" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybv-I3-Am2">
                                 <rect key="frame" x="32" y="756" width="52" height="21"/>
@@ -481,6 +509,9 @@
                                 <state key="normal" title="たしかめる">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="Check:" destination="TaI-BQ-wot" eventType="touchUpInside" id="JBI-6y-t6B"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9g-PY-N5N">
                                 <rect key="frame" x="304" y="711" width="90" height="66"/>
@@ -491,6 +522,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="Next:" destination="TaI-BQ-wot" eventType="touchUpInside" id="4xN-YL-mLY"/>
                                     <segue destination="BkW-ko-LBv" kind="presentation" modalPresentationStyle="fullScreen" id="yt4-rg-PTJ"/>
                                 </connections>
                             </button>
@@ -498,15 +530,21 @@
                         <viewLayoutGuide key="safeArea" id="FYD-zb-4f3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="A" destination="6Od-GK-Ue9" id="neI-O2-1D9"/>
+                        <outlet property="B" destination="rYh-jn-Phj" id="gUk-6u-AeQ"/>
+                        <outlet property="C" destination="aYZ-NE-KY1" id="aU1-SQ-yjq"/>
+                        <outlet property="Result" destination="ybv-I3-Am2" id="82X-Le-YkJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66p-Zs-neR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5837.68115942029" y="55.580357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz3 View Controller-->
         <scene sceneID="If9-8E-Ukd">
             <objects>
-                <viewController id="BkW-ko-LBv" sceneMemberID="viewController">
+                <viewController id="BkW-ko-LBv" customClass="Quiz3ViewController" customModule="Plant_Your_Own_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sdm-Qu-Qg5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -532,6 +570,9 @@
                                 <state key="normal" title="A:カブトムシ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapa:" destination="BkW-ko-LBv" eventType="touchUpInside" id="PBY-rp-Ax4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysJ-lk-nwl">
                                 <rect key="frame" x="17" y="337" width="381" height="40"/>
@@ -540,6 +581,9 @@
                                 <state key="normal" title="B:カメムシ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapb:" destination="BkW-ko-LBv" eventType="touchUpInside" id="R93-VC-8TB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDK-gC-9ya">
                                 <rect key="frame" x="17" y="408" width="381" height="40"/>
@@ -548,6 +592,9 @@
                                 <state key="normal" title="C:ハチ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapc:" destination="BkW-ko-LBv" eventType="touchUpInside" id="Zpq-qp-eZP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDx-RT-juJ">
                                 <rect key="frame" x="162" y="607" width="90" height="40"/>
@@ -557,6 +604,9 @@
                                 <state key="normal" title="たしかめる">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="Check:" destination="BkW-ko-LBv" eventType="touchUpInside" id="Y0A-os-frp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="けっか" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZ8-9M-gxm">
                                 <rect key="frame" x="41" y="738" width="52" height="21"/>
@@ -574,6 +624,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="Next:" destination="BkW-ko-LBv" eventType="touchUpInside" id="v63-VL-wUZ"/>
                                     <segue destination="2mb-NE-LvO" kind="presentation" modalPresentationStyle="fullScreen" id="fry-dw-c4g"/>
                                 </connections>
                             </button>
@@ -581,15 +632,21 @@
                         <viewLayoutGuide key="safeArea" id="1AL-vA-HO6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="A" destination="dZP-cC-uws" id="k0O-dg-IHS"/>
+                        <outlet property="B" destination="ysJ-lk-nwl" id="trj-iM-1DV"/>
+                        <outlet property="C" destination="UDK-gC-9ya" id="fIg-RA-Q21"/>
+                        <outlet property="Result" destination="VZ8-9M-gxm" id="ve5-DI-iVI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3j-7a-hp8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6610" y="56"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz Ending2 View Controller-->
         <scene sceneID="N7W-Gp-hZZ">
             <objects>
-                <viewController id="2mb-NE-LvO" sceneMemberID="viewController">
+                <viewController id="2mb-NE-LvO" customClass="QuizEnding2ViewController" customModule="Plant_Your_Own_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DeH-Az-7Jm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -619,6 +676,9 @@
                                 <state key="normal" title="次">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="Next:" destination="2mb-NE-LvO" eventType="touchUpInside" id="Tyl-li-JKq"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Recycle.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BZ5-f3-SNv">
                                 <rect key="frame" x="95" y="339" width="197" height="161"/>
@@ -628,6 +688,10 @@
                         <viewLayoutGuide key="safeArea" id="eKa-Se-Ga9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="congrats" destination="jY8-M6-7hL" id="fDX-Kr-leq"/>
+                        <outlet property="cycle" destination="BZ5-f3-SNv" id="Y6q-8s-HwY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgT-tM-AXK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,13 +13,13 @@ class QuizEnding1: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if UserInformation.shared.correctnumber < 2 {
+        if UserInformation.shared.firstcorrectnumber < 2 {
             praise.text = "もう一度頑張りましょう！"
             star.isHidden = true
         }
     }
     @IBAction func next(_ sender: Any) {
-        if UserInformation.shared.correctnumber < 2 {
+        if UserInformation.shared.firstcorrectnumber < 2 {
             let next = storyboard?.instantiateViewController(identifier: "quiz1") as! UIViewController
             next.modalPresentationStyle = .fullScreen
             self.present(next, animated: true, completion: nil)
