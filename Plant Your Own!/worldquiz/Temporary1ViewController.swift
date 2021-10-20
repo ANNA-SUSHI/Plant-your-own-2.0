@@ -18,7 +18,15 @@ class Temporary1ViewController: UIViewController {
         UserInformation.shared.thirdcorrectnumber = 0
 
         // Do any additional setup after loading the view.
-    }
+       }
+    @IBAction func next(_ sender: Any) {
+            if UserInformation.shared.thirdcorrectnumber < 2 {
+                let next = storyboard?.instantiateViewController(identifier: "01001") as! UIViewController
+                next.modalPresentationStyle = .fullScreen
+                self.present(next, animated: true, completion: nil)
+            }
+        }
+    
     
     @IBAction func Check(_ sender: Any) {
         if answer == "a" {

@@ -8,13 +8,16 @@
 import UIKit
 
 class QuizEnding3ViewController: UIViewController {
-
+    @IBOutlet weak var praise: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if UserInformation.shared.thirdcorrectnumber < 2 {
+                    praise.text = "もう一度頑張りましょう！"
     }
-    
+      }
 
     /*
     // MARK: - Navigation
