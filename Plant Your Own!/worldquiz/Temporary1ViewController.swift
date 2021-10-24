@@ -12,6 +12,7 @@ class Temporary1ViewController: UIViewController {
     @IBOutlet weak var B: UIButton!
     @IBOutlet weak var Result: UILabel!
     @IBOutlet weak var C: UIButton!
+    @IBOutlet weak var select: UILabel!
     private var answer = ""
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,13 +43,16 @@ class Temporary1ViewController: UIViewController {
         }
     }
     @IBAction func tapa(_ sender: Any) {
+        select.text = "a"
         answer = "a"
         
     }
     @IBAction func tapb(_ sender: Any) {
+        select.text = "b"
         answer = "b"
     }
     @IBAction func tapc(_ sender: Any) {
+        select.text = "c"
         answer = "c"
     }
     /*

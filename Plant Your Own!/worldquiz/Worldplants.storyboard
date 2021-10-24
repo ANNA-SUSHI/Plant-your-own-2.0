@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -456,6 +456,13 @@
                                     <action selector="tapc:" destination="Sad-LJ-9nA" eventType="touchUpInside" id="dFa-Fx-fjZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="回答(かいとう)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ea5-6J-cfT">
+                                <rect key="frame" x="130" y="485" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E2n-D0-MPj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -465,6 +472,7 @@
                         <outlet property="B" destination="23K-og-l18" id="0Nq-la-wCP"/>
                         <outlet property="C" destination="zIu-Cw-PGu" id="isu-Sj-9ck"/>
                         <outlet property="Result" destination="NSs-TV-8Tj" id="Rd9-vp-YLZ"/>
+                        <outlet property="select" destination="Ea5-6J-cfT" id="Tdd-oT-DbH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwP-hI-dci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -527,7 +535,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Next:" destination="B2Y-FB-wiF" eventType="touchUpInside" id="y92-4o-qa5"/>
-                                    <segue destination="BKO-cX-vFe" kind="presentation" modalPresentationStyle="fullScreen" id="ztU-32-sru"/>
+                                    <segue destination="BKO-cX-vFe" kind="presentation" modalPresentationStyle="fullScreen" id="NUc-Dj-ecK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xr-wk-l2g">
@@ -560,6 +568,13 @@
                                     <action selector="tapa:" destination="B2Y-FB-wiF" eventType="touchUpInside" id="gWO-RC-U1w"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="回答(かいとう)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXh-yR-uKD">
+                                <rect key="frame" x="149" y="473" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Btz-5o-eUK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -569,6 +584,7 @@
                         <outlet property="B" destination="j2M-Y3-JoC" id="m7N-Lc-rYn"/>
                         <outlet property="C" destination="A1A-LW-q5s" id="BP5-gt-TmK"/>
                         <outlet property="Result" destination="FNv-x0-0oH" id="G8S-6S-atk"/>
+                        <outlet property="select" destination="XXh-yR-uKD" id="rPg-Eh-XMy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eup-Xz-pNB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -651,11 +667,19 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="Next:" destination="BKO-cX-vFe" eventType="touchUpInside" id="qaD-0Y-S36"/>
+                                    <action selector="next:" destination="BKO-cX-vFe" eventType="touchUpInside" id="hF3-ns-oDK"/>
+                                    <segue destination="ac4-0p-Rxv" kind="presentation" modalPresentationStyle="fullScreen" id="VRt-bw-oUd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="けっか" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZt-7H-icQ">
                                 <rect key="frame" x="25" y="721" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="回答(かいとう)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u63-e9-IRN">
+                                <rect key="frame" x="152" y="466" width="117" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -670,6 +694,7 @@
                         <outlet property="B" destination="cV7-q8-0cj" id="1ND-BS-eWT"/>
                         <outlet property="C" destination="pX7-1e-Hqk" id="nol-iw-3v1"/>
                         <outlet property="Result" destination="NZt-7H-icQ" id="uYz-xs-bg8"/>
+                        <outlet property="select" destination="u63-e9-IRN" id="Boo-ZC-tB9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdj-W8-a6W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -696,9 +721,6 @@
                                 <state key="normal" title="次">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="Next:" destination="BKO-cX-vFe" eventType="touchUpInside" id="NNa-0k-h9p"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVv-sR-SJB">
                                 <rect key="frame" x="66" y="523" width="240" height="128"/>
@@ -722,12 +744,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="label" destination="eoG-kf-H5q" id="oY6-ho-Jaq"/>
+                        <outlet property="praise" destination="eoG-kf-H5q" id="zg4-ET-XK7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Wd-m2-FDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8511.5942028985519" y="62.946428571428569"/>
+            <point key="canvasLocation" x="8513" y="56"/>
         </scene>
     </scenes>
     <resources>

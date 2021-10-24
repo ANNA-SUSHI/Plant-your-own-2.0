@@ -13,6 +13,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var B: UIButton!
     @IBOutlet weak var C: UIButton!
     @IBOutlet weak var Result: UILabel!
+    @IBOutlet weak var select: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +28,16 @@ class QuizViewController: UIViewController {
         }
     }
     @IBAction func tapa(_ sender: Any) {
+        select.text = "a"
         answer = "a"
     }
     
     @IBAction func tapb(_ sender: Any) {
+        select.text = "b"
         answer = "b"
     }
     @IBAction func tapc(_ sender: Any) {
+        select.text = "c"
         answer = "c"
     }
     @IBAction func next(_ sender: Any) {

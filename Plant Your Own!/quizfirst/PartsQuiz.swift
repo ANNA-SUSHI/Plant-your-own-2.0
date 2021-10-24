@@ -12,6 +12,7 @@ class PartsQuiz: UIViewController {
     @IBOutlet weak var B: UIButton!
     @IBOutlet weak var C: UIButton!
     @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var select: UILabel!
     
     private var answer = ""
     override func viewDidLoad() {
@@ -19,18 +20,15 @@ class PartsQuiz: UIViewController {
     
     }
     @IBAction func A(_ sender: Any) {
-        B.isEnabled = false
-        C.isEnabled = false
+        select.text = "A"
         answer = "A"
     }
     @IBAction func B(_ sender: Any) {
-        A.isEnabled = false
-        C.isEnabled = false
+        select.text = "B"
         answer = "B"
     }
     @IBAction func C(_ sender: Any) {
-        A.isEnabled = false
-        B.isEnabled = false
+        select.text = "C"
         answer = "C"
     }
     @IBAction func check(_ sender: Any) {

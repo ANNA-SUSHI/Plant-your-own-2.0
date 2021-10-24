@@ -415,6 +415,13 @@
                                     <action selector="tapa:" destination="TP8-Pm-ApO" eventType="touchUpInside" id="caS-4P-7B2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="回答(かいとう)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78Q-d7-Yme">
+                                <rect key="frame" x="149" y="496" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NMq-WY-Api"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -424,6 +431,7 @@
                         <outlet property="B" destination="HhV-pb-h5N" id="jhg-O9-tcu"/>
                         <outlet property="C" destination="oeZ-F2-sDz" id="sQe-u9-hgc"/>
                         <outlet property="Result" destination="dos-s8-pYm" id="3Sl-ai-BV2"/>
+                        <outlet property="select" destination="78Q-d7-Yme" id="hG7-bg-EBP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gds-qd-5fF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -526,6 +534,13 @@
                                     <segue destination="BkW-ko-LBv" kind="presentation" modalPresentationStyle="fullScreen" id="yt4-rg-PTJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="回答(かいとう)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKu-6U-kgT">
+                                <rect key="frame" x="149" y="502" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FYD-zb-4f3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -535,6 +550,7 @@
                         <outlet property="B" destination="rYh-jn-Phj" id="gUk-6u-AeQ"/>
                         <outlet property="C" destination="aYZ-NE-KY1" id="aU1-SQ-yjq"/>
                         <outlet property="Result" destination="ybv-I3-Am2" id="82X-Le-YkJ"/>
+                        <outlet property="select" destination="gKu-6U-kgT" id="MVw-dO-OiI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66p-Zs-neR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -628,6 +644,13 @@
                                     <segue destination="2mb-NE-LvO" kind="presentation" modalPresentationStyle="fullScreen" id="fry-dw-c4g"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="回答(かいとう)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHu-0P-Js0">
+                                <rect key="frame" x="149" y="497" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1AL-vA-HO6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -636,7 +659,8 @@
                         <outlet property="A" destination="dZP-cC-uws" id="k0O-dg-IHS"/>
                         <outlet property="B" destination="ysJ-lk-nwl" id="trj-iM-1DV"/>
                         <outlet property="C" destination="UDK-gC-9ya" id="fIg-RA-Q21"/>
-                        <outlet property="Result" destination="VZ8-9M-gxm" id="ve5-DI-iVI"/>
+                        <outlet property="Result" destination="qHu-0P-Js0" id="vu8-QB-ThQ"/>
+                        <outlet property="select" destination="qHu-0P-Js0" id="dKR-p7-OZF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3j-7a-hp8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

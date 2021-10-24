@@ -26,8 +26,9 @@ class QuizEnding2ViewController: UIViewController {
             next.modalPresentationStyle = .fullScreen
             self.present(next, animated: true, completion: nil)
         } else {
+        
             let storyboard = UIStoryboard(name:"Worldplants",bundle:nil)
-            let next = storyboard.instantiateInitialViewController()!
+            let next = storyboard.instantiateInitialViewController() as! UIViewController
             next.modalPresentationStyle = .fullScreen
             present(next,animated:true)
         }
