@@ -11,7 +11,7 @@
 "meet" = "Pleased to meet you, 〇〇";
 "aid" = "Let's click the help button!";
 "situation" = "Please help 〇〇 san, our families are struggling to survive due to the lack of people understanding our way of living.";
-"questioning" = "What's wrong Ms. Tree?" "The sun's temperature is more hot these days with the lack of precipitation, our families are slowly dying.";
+"questioning" = "What's wrong Ms. Tree? The sun's temperature is more hot these days with the lack of precipitation, our families are slowly dying.";
 "solution" = "What can we do?, To help us, you need to understand the knowledge about plants first.";
 "learn" = "Let's learn about the basics of trees first!";
 "one" = "Inside this circle are called roots. Roots function like a human's heart. To grow themselves,they need water to convert to energy. Also, when the root grows, the plant will also grow as well.";
@@ -22,3 +22,12 @@
 "secondly" = "quiz2 Number two. What part of the tree is the most hardest? 1. Leaves 2. Roots 3. Trunk";
 "thirdly" = "quiz3 Number three. Water, Carbon dioxide and sunlight are needed to convert oxygen. What is the process of this called? 1. Growth 2. Photosynthesis 3. Absorption";
 "Pass" = "Congratulations! You have learned one thing about plants. Next time, let's learn about cycles!";
+"Reward" = "Hooray, you got a star! The more stars you get the more you can use it to buy something. However this is for a future development ^^";
+"Elicit" = "Let's click the badge collect button!";
+"Satisfied" = "Let's get the forest badge! Please click the 'get' button. To learn a new step, you need to collect badges for it.";
+"praise" = "Congratulations! ^^";
+
+/* Flower.storyboard*/
+
+"Tell" = "Now, the protagonist has learned one thing about plants. Let's learn about the propagation of the plants!";
+

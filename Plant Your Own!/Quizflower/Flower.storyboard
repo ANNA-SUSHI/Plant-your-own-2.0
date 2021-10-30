@@ -38,10 +38,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sii-E7-TDl">
-                                <rect key="frame" x="7" y="338" width="347" height="41"/>
+                                <rect key="frame" x="7" y="338" width="260" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">みどりちゃん、：今は００さんは木のことを
-ちょっとまなびました。</string>
+                                <string key="text">みどりちゃん、：今は００さんは
+ひとつ木のことをまなびました。</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

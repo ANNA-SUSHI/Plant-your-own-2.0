@@ -28,6 +28,7 @@
 		A4A52E6E26BEA9D600C57527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A52E6C26BEA9D600C57527 /* LaunchScreen.storyboard */; };
 		A4A52E7C26C7DFB200C57527 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4A52E7E26C7DFB200C57527 /* Localizable.strings */; };
 		A4A52E8526C7E1BB00C57527 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A52E8426C7E1BB00C57527 /* ResultViewController.swift */; };
+		A4A692E0272D644A0028538A /* LanguagefirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A692DF272D644A0028538A /* LanguagefirstViewController.swift */; };
 		A4BA30DE26ECCAB800D0CD9B /* Parts2quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA30DD26ECCAB800D0CD9B /* Parts2quiz.swift */; };
 		A4BA30E026ECCCEA00D0CD9B /* Flower.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BA30DF26ECCCEA00D0CD9B /* Flower.storyboard */; };
 		A4BA30E226ECCF5400D0CD9B /* Parts3quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA30E126ECCF5400D0CD9B /* Parts3quiz.swift */; };
@@ -64,6 +65,7 @@
 		A4A52E8126C7DFFF00C57527 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A4A52E8226C7E00000C57527 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A4A52E8426C7E1BB00C57527 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A4A692DF272D644A0028538A /* LanguagefirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagefirstViewController.swift; sourceTree = "<group>"; };
 		A4BA30DD26ECCAB800D0CD9B /* Parts2quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parts2quiz.swift; sourceTree = "<group>"; };
 		A4BA30DF26ECCCEA00D0CD9B /* Flower.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Flower.storyboard; sourceTree = "<group>"; };
 		A4BA30E126ECCF5400D0CD9B /* Parts3quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parts3quiz.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		A40D9383271AEA14007D20E5 /* quizfirst */ = {
 			isa = PBXGroup;
 			children = (
+				A4A692DF272D644A0028538A /* LanguagefirstViewController.swift */,
 				A4A52E8426C7E1BB00C57527 /* ResultViewController.swift */,
 				A4BA30E326F6000900D0CD9B /* Finalplant1.swift */,
 				A44B87D226DA5C29000B5064 /* Knowtree.swift */,
@@ -260,6 +263,7 @@
 				A44B87D726E3958E000B5064 /* PartsQuiz.swift in Sources */,
 				A4A52E8526C7E1BB00C57527 /* ResultViewController.swift in Sources */,
 				A40D938C271AF1D9007D20E5 /* QuizEnding2ViewController.swift in Sources */,
+				A4A692E0272D644A0028538A /* LanguagefirstViewController.swift in Sources */,
 				A44B87D126DA5B9C000B5064 /* Drytree.swift in Sources */,
 				A40D938A271AF00A007D20E5 /* Quiz3ViewController.swift in Sources */,
 			);

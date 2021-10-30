@@ -8,11 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var name: UILabel!
+    
     @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        name.text = NSLocalizedString("introduction", comment: "")
     }
     @IBAction func button(_ sender: Any) {
         performSegue(withIdentifier: "next", sender: nil)
